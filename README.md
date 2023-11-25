@@ -12,7 +12,9 @@ Get the title, release time, URL and other information of the news from the URL,
 ## 2. Data preprocessing  
 First, convert the obtained data to utf-8 format, and then clean the data to remove special characters, spaces, and duplicate news.    
 Then perform word segmentation, remove stop words, lemmatization, etc.  
-At the same time, pay attention to the part-of-speech filtering, only keep nouns, verbs, adjectives, and adverbs.  
+At the same time, pay attention to the part-of-speech filtering, only keep nouns, verbs, adjectives, and adverbs.    
+**Attention：**  
+Because the dataset spans a long time, the dataset needs to be segmented. The specific time period length depends on the parameter settings of the following two algorithms.
 
 ## 3. Get keywords and clustering
 There are two ways to get related news:  
