@@ -28,8 +28,8 @@ for url in urls:
             
             news_items.append({
                 'title': title,
-                'link': link,
-                'pubDate': pub_date
+                'url': link,
+                'time': pub_date
             })
         
         # Now 'news_items' contains all the extracted information
@@ -39,7 +39,7 @@ for url in urls:
         # save to bbc_news.csv
         import csv
         with open('bbc_news.csv', 'w', newline='') as csvfile:
-            fieldnames = ['title', 'link', 'pubDate']
+            fieldnames = ['title', 'url', 'time']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             for news_item in news_items:
