@@ -3,7 +3,8 @@
 About the implementation code and related resources of event timeline generation
 
 ## 1. Get news data
-New method to get news data:  from http://feeds.bbci.co.uk/news/rss.xml(https://web.archive.org/web/20220101000000*/http://feeds.bbci.co.uk/news/rss.xml  to get history data)  
+New method to get news data:  from http://feeds.bbci.co.uk/news/rss.xml  
+(https://web.archive.org/web/20220101000000*/http://feeds.bbci.co.uk/news/rss.xml  to get history data)  
 Besides scraping data from official websites, we can also scrape data from RSS feeds. RSS feeds are XML file formats used for publishing frequently updated works. RSS feeds are commonly used for websites that update their content regularly, such as blogs, news, audio, and video.  
 To scrape data from RSS feeds, we need to use the requests library to download the content of the RSS feed, and then use the BeautifulSoup library to parse the XML formatted content.  
 We will use the BBC News RSS feed. We will extract the news title, link, and publication date from the feed. We will use this information to build a CSV file with all the details of the news.  
