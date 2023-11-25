@@ -38,7 +38,7 @@ for url in urls:
 
         # save to bbc_news.csv
         import csv
-        with open('bbc_news1.csv', 'w', newline='') as csvfile:
+        with open('bbc_news.csv', 'w', newline='') as csvfile:
             fieldnames = ['title', 'link', 'pubDate']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
